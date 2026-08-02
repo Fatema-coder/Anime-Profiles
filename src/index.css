@@ -1,0 +1,20 @@
+@import "../node_modules/tailwindcss/index.css";
+
+@font-face {
+  font-family: 'BlackBones';
+  
+  src: url('/blackbones-demo/BlackbonesDEMORegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-blackbones: "BlackBones", sans-serif;
+}
+ 
+@layer utilities {
+  .tabs-btn {
+    @apply relative m-2 lg:flex lg:mx-10 lg:my-5 font-bold text-base lg:pl-3;
+  };
+}
