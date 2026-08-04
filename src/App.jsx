@@ -1,5 +1,6 @@
 import Tabs from './tabs.jsx'
 import React from'react';
+
 function App () {
     return (
    <section
