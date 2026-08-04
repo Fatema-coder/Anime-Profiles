@@ -4,42 +4,42 @@ const AnimeData = [
     anime:"Nana",
     characters:[
         {id:101,
-        image:"src/images/nana/nanaK.jpeg",
+        image:"/images/nana/nanaK.jpeg",
         name:"Nana Komatsu",
         role:"Protagonist",
         quote:"Because love and pain go hand in hand, and it hurts so much, you can drown in it.",
         description:"A naive, very self-aware, deeply romantic, and emotional young woman who constantly seeks validation and a fairy-tale love story."
     },
     {id:102,
-        image:"src/images/nana/nanaO.jpeg",
+        image:"/images/nana/nanaO.jpeg",
         name:"Nana Osaki",
         role:"Protagonist",
         quote:"Hey Hachi, no matter how much or how often people hurt each other, loving someone is never a waste.",
         description:"A fiercely independent punk-rock vocalist whose tough, edgy exterior masks a deeply fragile soul terrified of abandonment."
     },
     {id:103,
-        image:"src/images/nana/ren.jpeg",
+        image:"/images/nana/ren.jpeg",
         name:"Ren Honjo",
         role:"Lover / Bassist",
         quote:"I just want to be with you.",
         description:"A charismatic rock bassist and Nana O.'s passionate lover, torn between fame and the relationship he treasures most."
     },
     {id:104,
-        image:"src/images/nana/shin.jpeg",
+        image:"/images/nana/shin.jpeg",
         name:"Shin Nishida",
        role:"Rebellious Bassist",
         quote:"I don't need anyone's approval.",
         description:"A rebellious teenage bassist with a troubled past, whose cold exterior hides a surprisingly tender heart."
     },
      {id:105,
-        image:"src/images/nana/nobu.jpeg",
+        image:"/images/nana/nobu.jpeg",
         name:"Nobu Terashima",
         role:"Guitarist",
         quote:"I'll always be there for you.",
         description:"A warm-hearted guitarist hopelessly in love with Nana K., caught between friendship and his own feeling."
     },
     {id:106,
-        image:"src/images/nana/yasu.jpeg",
+        image:"/images/nana/yasu.jpeg",
         name:"Yasushi Takagi",
         role:"Backbone of BLAST",
         quote:"Someone has to be the adult here.",
@@ -52,7 +52,7 @@ const AnimeData = [
     anime:"Re: Zero - Starting Life in Another World",
     characters:[ {
         id:201,
-        image:"src/images/rezero/subaru.jpeg",
+        image:"/images/rezero/subaru.jpeg",
         name:"Subaru Natsuki",
         role:"Protagonist",
         quote:"I will never give up as long as I'm alive.",
@@ -60,7 +60,7 @@ const AnimeData = [
     },
     {
         id:202,
-        image:"src/images/rezero/emilia.jpeg",
+        image:"/images/rezero/emilia.jpeg",
         name:"Emilia",
         role:"Female Lead",
         quote:"I want to be someone who can make everyone smile.",
@@ -68,7 +68,7 @@ const AnimeData = [
     },
     {
         id:203,
-        image:"src/images/rezero/rem.jpeg",
+        image:"/images/rezero/rem.jpeg",
         name:"Rem",
         role:"The Girl Who Loves Him Most",
         quote:"I fell in love with your bad qualities too.",
@@ -76,7 +76,7 @@ const AnimeData = [
     },
     {
         id:204,
-        image:"src/images/rezero/ram.jpeg",
+        image:"/images/rezero/ram.jpeg",
         name:"Ram",
         role:"Senior Maid",
         quote:"Barusu is hopeless without me.",
@@ -84,7 +84,7 @@ const AnimeData = [
     },
     {
         id:205,
-        image:"src/images/rezero/bethy.jpeg",
+        image:"/images/rezero/bethy.jpeg",
         name:"Beatrice",
         role:"Forbidden Library Spirit",
         quote:"I suppose, I guess, maybe... I'll stay by your side.",
@@ -92,7 +92,7 @@ const AnimeData = [
     },
     {
     id: 206,
-  image: "src/images/rezero/puck.jpeg",
+  image: "/images/rezero/puck.jpeg",
   name: "Puck",
   role: "Spirit Guardian",
   quote: "I exist only for Emilia. Everything else is secondary.",
@@ -106,7 +106,7 @@ const AnimeData = [
     characters:[
         {
             id: 301,
-            image:"src/images/aot/eren.jpeg",
+            image:"/images/aot/eren.jpeg",
             name:"Eren Yeager",
             role:"Protagonist",
             quote:"I will keep moving forward, until my enemies are destroyed",
@@ -114,7 +114,7 @@ const AnimeData = [
         },
         {
             id: 302,
-            image:"src/images/aot/mikasa.jpeg",
+            image:"/images/aot/mikasa.jpeg",
             name:"Mikasa Ackerman",
             role:"Female Lead",
             quote:"The world is cruel, but also very beautiful.",
@@ -122,7 +122,7 @@ const AnimeData = [
         },
         {
             id: 303,
-            image:"src/images/aot/armin.jpeg",
+            image:"/images/aot/armin.jpeg",
             name:"Armin Arlert",
             role:"Male Lead",
             quote:"Someone who cannot sacrifice anything, cannot change anything",
@@ -130,7 +130,7 @@ const AnimeData = [
         },
         {
             id: 304,
-            image:"src/images/aot/levi.jpeg",
+            image:"/images/aot/levi.jpeg",
             name:"Levi Ackerman",
             role:"Humanity's Strongest Soldier",
             quote:"The only thing we're allowed to do is believe that we won't regret the choice we made.",
@@ -140,7 +140,7 @@ const AnimeData = [
         
         {
             id: 305,
-  image: "src/images/aot/erwin.jpeg",
+  image: "/images/aot/erwin.jpeg",
   name: "Captain Erwin Smith",
   role:"Survey Corps Commander",
   quote: "If you begin to regret, you'll dull your future decisions and let others make your choices for you.",
@@ -148,7 +148,7 @@ const AnimeData = [
         },
     {
             id: 306,
-            image:"src/images/aot/sashsa.jpeg",
+            image:"/images/aot/sashsa.jpeg",
             name:"Sasha Blouse",
             role:"Supporting Character",
             quote:"I just want to eat delicious food and live in peace.",
@@ -162,7 +162,7 @@ const AnimeData = [
     characters:[
         {
             id: 401,
-            image:"src/images/fruit-basket/tohru.jpeg",
+            image:"/images/fruit-basket/tohru.jpeg",
             name:"Tohru Honda",
             role:"Protagonist",
             quote:"I want to give you tomorrow.",
@@ -170,7 +170,7 @@ const AnimeData = [
         },
          {
             id: 402,
-            image:"src/images/fruit-basket/kyo.jpeg",
+            image:"/images/fruit-basket/kyo.jpeg",
             name:"Kyo Sohma",
             role:"Male Lead",
             quote:"I'll never regret loving you.",
@@ -178,7 +178,7 @@ const AnimeData = [
         },
          {
             id: 403,
-            image:"src/images/fruit-basket/yuki.jpeg",
+            image:"/images/fruit-basket/yuki.jpeg",
             name:"Yuki Sohma",
             role:"Male Lead",
             quote:"I want to find a place where I can be myself.",
@@ -186,23 +186,24 @@ const AnimeData = [
         },
          {
             id: 404,
-            image:"src/images/fruit-basket/shigure.jpeg",
+            image:"/images/fruit-basket/shigure.jpeg",
             name:"Shigure Sohma",
             role:"The Schemer",
             quote:"I'm a very selfish person, you know.",
             description:"A mysterious, teasing novelist who always seems to be smiling — yet quietly orchestrates events with a depth and agenda no one fully sees coming."
         },
-        {
-  id: 405,
-  image: "src/images/fruit-basket/akito.jpeg",
-  name: "Akito Sohma",
-  role:"God of the Zodiac / Antagonist",
-  quote: "They will always come back to me. I am their god.",
-  description: "The fragile and terrifying head of the Sohma family, whose cruelty stems from a deep fear of abandonment and a lifetime of isolation disguised as divine authority."
+          {
+ 
+            id: 405,
+            image: "/images/fruit-basket/akito.jpeg",
+            name: "Akito Sohma",
+            role:"God of the Zodiac / Antagonist",
+            quote: "They will always come back to me. I am their god.",
+            description: "The fragile and terrifying head of the Sohma family, whose cruelty stems from a deep fear of abandonment and a lifetime of isolation disguised as divine authority."
 },
          {
             id: 406,
-            image:"src/images/fruit-basket/momiji.jpeg",
+            image:"/images/fruit-basket/momiji.jpeg",
             name:"Momiji Sohma",
             role:"Supporting Character",
             quote:"Even if I forget you someday, I'll always love you.",
