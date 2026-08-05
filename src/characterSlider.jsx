@@ -4,9 +4,11 @@ function CharacterSlider({currentAnime}){
 const [characterIndex, setCharacterIndex] = useState(0);
 
 useEffect(() => {
+  setCharacterIndex(0);
+}, [currentAnime.id]);
 
+useEffect(() => {
    const slider = setInterval(() => {
-
       setCharacterIndex((currentIndex)=>{
         let next = currentIndex + 1;
         if(next > currentAnime.characters.length - 1){
@@ -14,13 +16,12 @@ useEffect(() => {
         }
         return next;
       });
-
    }, 5000);
 
    return () => {
       clearInterval(slider);
    };
-}, [characterIndex, currentAnime.characters.length]);
+}, [currentAnime.id, currentAnime.characters.length]);
 
 let nextCharacter = characterIndex + 1; 
  let previousCharacter = characterIndex - 1;
