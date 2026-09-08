@@ -1,18 +1,44 @@
-# React + Vite
+🎭 Anime Character Archive
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive anime character showcase built with React + Tailwind CSS.
 
-Currently, two official plugins are available:
+The project combines a character carousel with an interactive Declassified Memory Archive, where each character has randomly selected lore entries and a visual archive overlay.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+✨ Features
+🎴 Interactive anime character carousel
+🔄 Automatic character rotation
+⏸️ Carousel pauses when interacting with the archive
+📖 Randomized character memory/lore archives
+🖼️ Character-specific archive portraits
+🪟 Full-screen archive overlay
+📱 Responsive design for desktop, tablet, and mobile
+🎨 Custom visual-novel / otome-inspired interface
+🌫️ Backdrop blur and layered UI effects
+⚛️ Component-based React architecture
+🛠️ Built With
+React
+Vite
+Tailwind CSS
+JavaScript
+Git & GitHub
+Vercel
+📂 Project Structure
+src/
+├── components/
+│   ├── CharacterCard.jsx
+│   ├── CharacterSlider.jsx
+│   ├── LoreGenerator.jsx
+│   └── Tabs.jsx
+│
+├── data.js
+├── lore.js
+├── App.jsx
+└── main.jsx
 
-## React Compiler
-
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+public/
+└── images/
+    ├── nana/
+    ├── rezero/
+    ├── aot/
+    ├── fruitBasket/
+    └── loreImages/
