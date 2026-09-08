@@ -114,7 +114,8 @@ This project was built as a hands-on React learning project. Through it, I pract
 
 ## 🌐 Live Demo
 
-**Vercel:** [Live Demo](https://anime-profiles-git-main-fatema-surajs-projects.vercel.app/)
+**Vercel:** https://anime-profiles-azure.vercel.app
+
 
 ---
 
