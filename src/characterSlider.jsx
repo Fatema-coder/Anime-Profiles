@@ -1,13 +1,12 @@
-import {useState,useEffect} from 'react'
+import { useEffect } from 'react'
 import CharacterCard from './characterCard.jsx'
-function CharacterSlider({currentAnime}){
-const [characterIndex, setCharacterIndex] = useState(0);
-
+function CharacterSlider({currentAnime,currentArchive,setCurrentArchive,showArchive, setShowArchive, characterIndex, setCharacterIndex}){
 useEffect(() => {
   setCharacterIndex(0);
-}, [currentAnime.id]);
+}, [currentAnime.id, setCharacterIndex]);
 
 useEffect(() => {
+  if (showArchive) return;
    const slider = setInterval(() => {
       setCharacterIndex((currentIndex)=>{
         let next = currentIndex + 1;
@@ -21,7 +20,7 @@ useEffect(() => {
    return () => {
       clearInterval(slider);
    };
-}, [currentAnime.id, currentAnime.characters.length]);
+}, [currentAnime.id, currentAnime.characters.length, showArchive, setCharacterIndex]);
 
 let nextCharacter = characterIndex + 1; 
  let previousCharacter = characterIndex - 1;
@@ -36,11 +35,12 @@ let nextCharacter = characterIndex + 1;
     return(
         <>
         <div className='relative'>
-      <button className='absolute left-2 md:left-[6%] lg:left-[6%] top-[35%] -translate-y-1/2 z-30 text-[#FF1818] text-2xl hover:text-white' onClick={()=>setCharacterIndex(previousCharacter)}><i className="fa-solid fa-angle-left"></i></button>
+      <button className='absolute left-[6%] md:left-[6%] lg:left-[6%] top-[35%] -translate-y-1/2 z-30 text-[#FF1818] text-2xl hover:text-white' onClick={()=>setCharacterIndex(previousCharacter)}><i className="fa-solid fa-angle-left"></i></button>
      <div className='relative overflow-hidden h-[900px] lg:h-[600px] w-full rounded-lg '>
       
      {currentAnime.characters.map((character, index)=>{
        let offset = index - characterIndex;
+       
        if (offset === currentAnime.characters.length - 1){
         offset = -1;
        }
@@ -62,11 +62,11 @@ if (Math.abs(offset) === 1) {
 }
 
    return(
-    <CharacterCard key={character.id} character={character} offset={offset} sliderClass ={sliderClass} translateX={translateX} scale={scale} opacity={opacity} zIndex={zIndex}/>
+    <CharacterCard key={character.id} character={character} offset={offset} sliderClass ={sliderClass} translateX={translateX} scale={scale} opacity={opacity} zIndex={zIndex} currentAnime={currentAnime} currentCharacter={character} cardIndex={index} setCharacterIndex={setCharacterIndex} setShowArchive={setShowArchive} currentArchive={currentArchive} setCurrentArchive={setCurrentArchive}/>
       )
      })}
      </div>
-      <button className='absolute right-2 md:right-[6%] lg:right-[6%] top-[35%] -translate-y-1/2 z-30 text-[#FF1818] text-2xl hover:text-white' onClick={()=>setCharacterIndex(nextCharacter)}><i className="fa-solid fa-angle-right"></i></button>
+      <button className='absolute right-[6%] md:right-[6%] lg:right-[6%] top-[35%] -translate-y-1/2 z-30 text-[#FF1818] text-2xl hover:text-white' onClick={()=>setCharacterIndex(nextCharacter)}><i className="fa-solid fa-angle-right"></i></button>
       </div>
         </>
     );

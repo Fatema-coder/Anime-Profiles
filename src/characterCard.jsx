@@ -1,6 +1,5 @@
-import react from 'react';
-import characterSlider from './characterSlider.jsx'
-function CharacterCard({character, offset, sliderClass, translateX, scale, opacity, zIndex}){
+import LoreGenerator from './loreGenerator.jsx'
+function CharacterCard({character, offset, sliderClass, translateX, scale, opacity, zIndex, currentAnime, currentCharacter, cardIndex, setCharacterIndex, setShowArchive,currentArchive ,setCurrentArchive}){
   return(
 <article
   key={character.id}
@@ -17,8 +16,11 @@ function CharacterCard({character, offset, sliderClass, translateX, scale, opaci
      <p className='text-[#FF1818]'>{character.role}</p>
      <p className='text-gray-300 italic text-sm text-center'>"{character.quote}"</p>
      <hr className='border-t border-gray-700 my-3 mx-4'/>
-     {offset === 0 ? (
+      {offset === 0 ? (
+      <>
   <p className="text-gray-400">{character.description}</p>
+    <LoreGenerator currentAnime={currentAnime} currentCharacter={currentCharacter} currentArchive={currentArchive} setCurrentArchive={setCurrentArchive} setShowArchive={setShowArchive} cardIndex={cardIndex} setCharacterIndex={setCharacterIndex}/>
+  </>
 ) : (
   <p className="italic text-gray-500">...</p>
 )}
