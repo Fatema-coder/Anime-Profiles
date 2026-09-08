@@ -21,7 +21,7 @@ Vite
 Tailwind CSS
 JavaScript
 Git & GitHub
-Vercel
+[Vercel](https://anime-profiles-8g2bsn9hj-fatema-surajs-projects.vercel.app/)
 📂 Project Structure
 src/
 ├── components/
